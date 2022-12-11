@@ -5,31 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modul 1 - 120140049</title>
-    <style>
-        :root {
-            box-sizing: border-box;
-        }
-
-        .main-nav {
-            background-color: ghostwhite;
-        }
-
-        .main-nav__link:visited {
-            color: blue;
-        }
-
-        .wrapper>header img {
-            max-width: 120px;
-            min-width: 120px;
-        }
-        .greeting {
-            display: flex;
-        }
-        .greeting__text {
-            padding-top: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
+    <title>Modul 2 - 120140049</title>
 </head>
 
 <body>
@@ -43,73 +20,97 @@
                 </div>
             </div>
             <nav class="main-nav">
-                <ul>
-                    <li><a href="#tentang-saya">Tentang Saya</a></li>
-                    <li><a href="#pengalaman-kerja">Pengalaman Kerja</a></li>
-                    <li><a href="#hubungi-saya">Hubungi Saya</a></li>
+                <ul class="main-nav__list">
+                    <li class="main-nav__item"><a href="#tentang-saya" class="main-nav__link">Tentang Saya</a></li>
+                    <li class="main-nav__item"><a href="#pengalaman-kerja" class="main-nav__link">Pengalaman Kerja</a>
+                    </li>
+                    <li class="main-nav__item"><a href="#hubungi-saya" class="main-nav__link">Hubungi Saya</a></li>
                 </ul>
             </nav>
         </header>
         <div class="content">
             <div id="tentang-saya" class="tentang-saya">
-                <h2>Tentang Saya</h2>
-                <p>Saya Revan Fauzi Algifari, mahasiswa semester 5 Teknik Informatika ITERA. Saya berumur 20 tahun,
-                    tertarik dengan Back-end developer, IT Networking dan Cyber Security. Lorem ipsum dolor sit amet,
-                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                    mollit anim id est laborum.</p>
-                <iframe width="600" height="360" src="https://www.youtube.com/embed/L0MK7qz13bU"
-                    title="FROZEN | Let It Go Sing-along | Official Disney UK" frameborder="0"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope;" allowfullscreen>Browser anda
-                    tidak mendukung pemutaran</iframe>
+                <h2 class="section-header"><span class="header-box">Tentang Saya</span></h2>
+                <div class="description">
+                    <iframe width="600" height="480" src="https://www.youtube.com/embed/ZxxdMECvALY"
+                        title="Reality Club - Hesitation" allowfullscreen class="tentang-saya__video"></iframe>
+                    <p>Saya Revan Fauzi Algifari, mahasiswa semester 5 Teknik Informatika ITERA. Saya berumur 20 tahun,
+                        tertarik dengan Back-end developer, IT Networking dan Cyber Security. Lorem ipsum dolor sit
+                        amet,
+                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut
+                        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt
+                        mollit anim id est laborum.</p>
+                </div>
             </div>
             <div id="pengalaman-kerja" class="pengalaman-kerja">
-                <h2>Pengalaman Kerja</h2>
-                <table id="pengalaman-kerja__table" border="2">
-                    <tr>
-                        <th rowspan="2">no</th>
-                        <th rowspan="2">posisi</th>
-                        <th rowspan="2">perusahaan</th>
-                        <th colspan="2">waktu</th>
-                    </tr>
-                    <tr>
-                        <th>mulai</th>
-                        <th>selesai</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Teknisi Jaringan</td>
-                        <td>Universitas Negeri Padang</td>
-                        <td>April 2019</td>
-                        <td>September 2019</td>
-                    </tr>
-                </table>
+                <h2 class="section-header"><span class="header-box">Pengalaman Kerja</span></h2>
+                <div class="description">
+                    <table class="pengalaman-kerja__table">
+                        <tr>
+                            <th rowspan="2">no</th>
+                            <th rowspan="2">posisi</th>
+                            <th rowspan="2">perusahaan</th>
+                            <th colspan="2">waktu</th>
+                        </tr>
+                        <tr>
+                            <th>mulai</th>
+                            <th>selesai</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Teknisi Jaringan</td>
+                            <td>Universitas Negeri Padang</td>
+                            <td>April 2019</td>
+                            <td>September 2019</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Waiting...</td>
+                            <td>Waiting...</td>
+                            <td>Waiting...</td>
+                            <td>Waiting...</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Waiting...</td>
+                            <td>Waiting...</td>
+                            <td>Waiting...</td>
+                            <td>Waiting...</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
             <div id="hubungi-saya" class="hubungi-saya">
-                <h2>Hubungi Saya</h2>
-                <form action="#">
-                    <label for="nama">nama :</label>
-                    <input id="nama" type="text" />
-                    <div class="radio">
-                        <p>jenis kelamin?</p>
-                        <input type="radio" name="nonton" value="sudah" /> laki-laki <br />
-                        <input type="radio" name="nonton" value="belum" /> wanita <br /><br />
+                <h2 class="section-header"><span class="header-box">Hubungi Saya</span></h2>
+                <form class="form" action="#">
+                    <div class="input form__name">
+                        <label for="nama">Nama :</label>
+                        <input id="nama" type="text" />
                     </div>
-                    <div class="checkbox">
+                    <div class="input form__radio">
+                        <p>Jenis Kelamin</p>
+                        <input type="radio" name="nonton" value="L" />Laki-laki<br />
+                        <input type="radio" name="nonton" value="P" />Perempuan<br /><br />
+                    </div>
+                    <div class="input form__checkbox">
                         <input id="check1" type="checkbox" value="ini" />
-                        <label for="check1">ini</label><br />
-                        <input id="check1" type="checkbox" value="itu" />
-                        <label for="check1">itu</label><br />
-                        <input id="check1" type="checkbox" value="anu" />
-                        <label for="check1">anu</label><br />
+                        <label for="check1">ini</label>
+                        <input id="check2" type="checkbox" value="itu" />
+                        <label for="check2">itu</label>
+                        <input id="check3" type="checkbox" value="anu" />
+                        <label for="check3">anu</label>
                     </div>
-                    <input type="submit" value="kirim">
+                    <textarea class="input form__textarea" placeholder="Masukin pesan"></textarea><br />
+                    <input class="btn" type="submit" value="Kirim">
                 </form>
             </div>
             <footer>
-                <p>ini akhir</p>
+                <p>&copy; Revan Fauzi Algifari</p>
             </footer>
         </div>
     </div>
