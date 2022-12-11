@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
 :root {
 	--fg: #6d423c;
@@ -10,7 +10,7 @@
 
 * {
 	box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
+	font-family: "Josefin Sans", sans-serif;
 }
 
 html,
@@ -25,15 +25,13 @@ body {
 }
 
 .greeting {
+	background-color: var(--bg);
 	display: flex;
+	align-items: center;
 }
 
 .greeting__profile-picture {
 	max-width: 180px;
-}
-
-.greeting__text {
-	margin-top: 30px;
 }
 
 .main-nav {
@@ -41,15 +39,16 @@ body {
 }
 
 .main-nav__list {
-	padding: 0;
+    margin: 0;
+    padding: 0;
 	display: flex;
 	justify-content: flex-start;
 }
 
 .main-nav__item {
-    padding: 20px 0;
-    text-transform: uppercase;
-    font-weight: 600;
+	padding: 20px 0;
+	text-transform: uppercase;
+	font-weight: 600;
 	list-style-type: none;
 }
 
@@ -58,8 +57,8 @@ body {
 }
 
 .main-nav__link {
-    padding: 20px;
-    color: black;
+	padding: 20px;
+	color: black;
 	text-decoration: none;
 }
 
@@ -68,14 +67,14 @@ body {
 }
 
 .section-header {
-    margin-top: 35px;
+	margin-top: 35px;
 }
 
 .header-box {
-    margin-left: 20px;
-    padding: 10px;
+	margin-left: 20px;
+	padding: 10px;
 	background-color: var(--blue);
-    border-radius: 10px;;
+	border-radius: 10px;
 }
 
 .header-box::before {
@@ -83,83 +82,82 @@ body {
 }
 
 .description {
-    display: flex;
-    padding: 20px;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	padding: 20px;
+	gap: 10px;
+	align-items: center;
+	justify-content: center;
 }
 
 .description p {
-    padding: 10px;
-    text-align: justify;
+	padding: 10px;
+	text-align: justify;
 }
 
 .tentang-saya__video {
 	max-width: 100%;
-    min-width: 50%;
+	min-width: 50%;
 }
 
 .pengalaman-kerja__table {
-    text-align: center;
+	text-align: center;
 	border: 2px solid;
 }
 
 .pengalaman-kerja__table td {
-    padding: 10px;
+	padding: 10px;
 }
 
 .pengalaman-kerja__table th:nth-child(1) {
-    width: 5%;
+	width: 5%;
 }
 
 .pengalaman-kerja__table th {
 	background-color: var(--blue);
 }
 
-
 .pengalaman-kerja__table tr:nth-child(even) {
-    background-color: lightgrey;
+	background-color: lightgrey;
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    border-radius: 10px;
-    background-color: var(--blue);
-    padding: 40px;
-    max-width: 540px;
-    align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+	border-radius: 10px;
+	background-color: var(--blue);
+	padding: 40px;
+	max-width: 540px;
+	align-items: flex-start;
 }
 
 .input {
-    width: 100%;
-    max-width: 250px;
-    padding-bottom: 10px;
+	width: 100%;
+	max-width: 250px;
+	padding-bottom: 10px;
 }
 
 .btn {
-    background-color: var(--red);
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
+	background-color: var(--red);
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
 }
 
 .form_name {
-    width: 100%;
+	width: 100%;
 }
 
 .form__checkbox {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .form__textarea {
-    min-width: 100%;
-    min-height: 150px;
+	min-width: 100%;
+	min-height: 150px;
 }
 
 footer {
-    text-align: center;
+	text-align: center;
 }
