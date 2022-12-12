@@ -41,15 +41,14 @@ function intToRoman($target)
 </head>
 
 <body>
-    <form action="#" method="POST">
+    <form action="#" method="POST" align="center">
         <label for="angka">
             Angka :
             <input type="number" name="angka" id="angka">
         </label>
         <button type="submit">Konversi</button>
-        <div id="hasil"></div>
-        <h2>Romawi: <?php error_reporting(0);
-                    echo intToRoman($_POST["angka"]); ?></h2>
+        <h3>Bilangan Romawi: <?php error_reporting(0);
+                                echo intToRoman($_POST["angka"]); ?></h3>
     </form>
 </body>
 
